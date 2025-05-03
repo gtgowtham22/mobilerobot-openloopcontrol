@@ -9,25 +9,28 @@ To develop a python control code to move the mobilerobot along the predefined pa
 
 ## Procedure
 
-Step1:
+ 
 
-<br/>
+1. **Initialization**:
+   - Establish connection with the RoboMaster EP robot
+   - Get access to the chassis control module
 
-Step2:
+2. **Movement Definition**:
+   - Created a list of movement commands with parameters for:
+     - x: forward/backward speed (m/s)
+     - y: left/right speed (m/s)
+     - z: rotation speed (deg/s)
+     - time: duration of movement (seconds)
 
-<br/>
+3. **Movement Execution**:
+   - Loop through each movement command
+   - Set the specified speeds using `drive_speed()`
+   - Maintain the movement for the specified duration
+   - Briefly stop between movements for cleaner transitions
 
-Step3:
-
-<br/>
-
-Step4:
-
-<br/>
-
-Step5:
-
-<br/>
+4. **Cleanup**:
+   - Ensure robot stops completely
+   - Close the connection properly
 
 ## Program
 ```python
